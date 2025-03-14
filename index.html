@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+    <title>WYArchetype?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/7502860-200.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  
+<body>
+  <div class="hero">
+  <nav>
+    <img class="img1" src="https://static.thenounproject.com/png/7502860-200.png" alt="" width="100" height="100">
+      <h2 class="h2class">WYArchetype?</h2>
+      <ul>
+        <li><a href"index.html">Home</a></li>
+        <i class="fa fa-home" style="font-size:20px;"></i>
+        <li><a href"credit.html">Credits</a></li>
+        <i class="fa fa-edit" style="font-size:20px;"></i>
+        <li><a href"#">Languages</a></li>
+        <i class="fa fa-globe" style="font-size:20px;"></i>
+        <div id="google_translate_element">
+    
+        </div>
+  <script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </ul>
+
+
+  </nav>
+  </div>
+
+
+  <div id="quote-container">
+    <!-- Quote will be inserted here -->
+  </div>
+
+  
+  <script>
+     const quotes = [
+          "The only way to do great work is to love what you do.",
+          "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+          "Believe you can and you're halfway there.",
+          "The future belongs to those who believe in the beauty of their dreams.",
+          "Be the change that you wish to see in the world."
+          ];
+  
+      function getRandomQuote() {
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          return quotes[randomIndex];
+      }
+  
+      document.addEventListener('DOMContentLoaded', () => {
+          const quoteContainer = document.getElementById('quote-container');
+          quoteContainer.style.fontFamily = 'Georgia';
+          quoteContainer.style.fontSize = "20px";
+          quoteContainer.style.color = "brown";
+          const randomQuote = getRandomQuote();
+          quoteContainer.textContent = randomQuote;
+      });
+  </script>
+
+
+  <div class="my-container">
+    <h1>Purpose<h1>
+    <p>To make sure students in WHS are able to make sure their future education plans matches their needs and wants.</p>
+  </div>
+
+  <div class="my-container2">
+    <h1>We reccomend and encourage to take the quiz with honesty as a guider to your future paths.<h1>
+  </div>
+
+<div id="container">
+   <a href="quiz.html">
+     <button class="button">START THE QUIZ
+       <i class="fa fa-play" style="font-size:20px;"></i>
+     </button>
+   </a>
+</div>
+
+</body>
+</html>
+
+
 
