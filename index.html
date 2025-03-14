@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/7502860-200.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-  
 <body>
   <div class="hero">
   <nav>
@@ -21,18 +20,6 @@
         <i class="fa fa-edit" style="font-size:20px;"></i>
         <li><a href"#">Languages</a></li>
         <i class="fa fa-globe" style="font-size:20px;"></i>
-        <div id="google_translate_element">
-    
-        </div>
-  <script>
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
-  </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-      </ul>
-
-
   </nav>
   </div>
 
@@ -59,7 +46,7 @@
       document.addEventListener('DOMContentLoaded', () => {
           const quoteContainer = document.getElementById('quote-container');
           quoteContainer.style.fontFamily = 'Georgia';
-          quoteContainer.style.fontSize = "20px";
+          quoteContainer.style.fontSize = "35px";
           quoteContainer.style.color = "brown";
           const randomQuote = getRandomQuote();
           quoteContainer.textContent = randomQuote;
@@ -83,6 +70,7 @@
      </button>
    </a>
 </div>
+
 
 </body>
 </html>
